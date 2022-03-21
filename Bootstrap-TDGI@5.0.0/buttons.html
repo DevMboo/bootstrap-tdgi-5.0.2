@@ -74,6 +74,80 @@
 
     </div>
 
+    <!-- Explicação -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center pt-4 mb-5">
+                <div class="card p-5">
+                    <div class="row">
+                        <div class="card-title text-dark font fw-lighter"><h3>Explicando a montagem do HTML</h3></div>
+                        <hr class="text-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="text-dark text-start text-justify">
+                                    <strong>Dividindo em etapas</strong><br>
+                                    <li>
+                                        <span>Os botões devem sempre ser compostos com 4 tags de controle de fluxo dentro de uma tag <code> < a class="btn-success-td">texto qualquer< /a></code>, essas
+                                        tags podem ser <code>< span> ou < div></code> sendo que esses
+                                        container's devem ser acompanhados da <code>class</code>="line", e seguindo a regra de enumeração 
+                                        do 1 até o 4, que formaram as 4 bordas do botão, sendo assim elas devem ser numeradas da seguinte forma:
+                                        <code>< span class='line-1-success'>< /span>, < span class='line-2-success'>< /span>,
+                                              < span class='line-3-success'>< /span>, < span class='line-4-success'>< /span>,</code>
+                                              essas <code>tags</code> span ou div serão manipuladas pelo <strong>CSS</strong> e vão rotacionar assim que a janela for carregada para o usuário. E para que a animação e coloração 
+                                              funcione corretamente precisa ser definido a designação da estilização desejada, sendo elas <code>"primary","warning","success" e "danger"</code>.<br>
+                                        </span>
+                                        <br>
+                                        <span class="pt-3">
+                                            <strong>Lembre sempre!</strong>, todas as TAGS precisam ser envolvidas em uma <code> < div></code> com <code>class="btn-cont"</code>, ela sim vai envolver todos
+                                            os componentes que animam a ferramenta.
+                                        </span>      
+                                        <br>
+                                        <strong>Exemplo:</strong>
+                                        <span class="p-3 d-grid justify-content-center">
+                                            <p class="fw-lighter">Código pronto:</p>
+                                            <code class="card p-5"><br>
+                                                < div class='btn-cont'><br>
+                                                <span style="margin-left: 45px;">< a class='btn-success-td btn' href='#'><br></span> 
+                                                       btn-success-td<br>
+                                                      <span style="margin-left: 85px;">< span class='line-1-success'>< /span></span><br>
+                                                      <span style="margin-left: 85px;">< span class='line-2-success'>< /span></span><br>
+                                                      <span style="margin-left: 85px;">< span class='line-3-success'>< /span></span><br>
+                                                      <span style="margin-left: 85px;">< span class='line-4-success'>< /span></span><br>
+                                                <span style="margin-left: 45px;">< /a></span><br>
+                                                < /div>
+                                            </code>
+                                        </span>
+                                        <br>
+                                        <span class="pt-3 d-grid justify-content-center">
+                                            <p class="fw-lighter">Saída:</p>
+                                             <div class="card p-5">
+                                                 <!-- btn-cont btn-success-td -->
+                                                    <div class='btn-cont'>
+                                                        <a class='btn-success-td btn' href='#'>
+                                                        btn-success-td
+                                                        <span class='line-1-success'></span>
+                                                        <span class='line-2-success'></span>
+                                                        <span class='line-3-success'></span>
+                                                        <span class='line-4-success'></span>
+                                                        </a>
+                                                    </div>
+                                                <!-- \btn-cont -->
+                                             </div>   
+                                        </span>
+                                        <hr>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- \Explicação -->
+
 
 </body>
 <script src="./bootstrap.tdgi.min.js"></script>
